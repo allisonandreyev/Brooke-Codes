@@ -34,12 +34,47 @@
         <span id="color_hex_value"></span>
     </div>
     <h1>All about Ukraine - Scrapbook</h1>
-    <p>Not many know much about Ukraine, but Ukraine is actually known for its rich culture in food, music, clothing and so much more! Click around our website to find out more! </p>
+    <p>Not many know much about Ukraine, but Ukraine is actually known for its rich culture in food,
+         music, clothing and so much more! Click around our website to find out more! Make sure to compelete the quiz when you are done! </p>
     <body bgcolor="#e1f2ee">
     <hr>
-    <style>
-        body {
-            background-color: #b2d6d1
-        }
-    </style>
+    <fieldset>
+        <form id="quiz"  method="post">
+        <h3> Quiz about Ukraine </h3>
+        <p> Do you know anythig about Ukraine that has not been shown on the website? </p>
+        <br>
+        <label for="gov"><h5> What type of government does Ukraine have? </h5></label>
+        <select id="gov">
+          <option value="Dictatorship">Dictatorship</option>
+          <option value="Democracy">Democracy</option>
+          <option value="Semi-Presidential republic">Semi-Presidential republic</option>
+          <option value="Communist government">Communist Government</option>
+          <option value="Democratic Republic">Democratic Republic</option>
+        </select>
+        <br>
+        <label for="currency"><h5> What is Ukraines official currency? </h5></label>
+        <select id="currency">
+          <option value="Rubles">Rubles</option>
+          <option value="USD">US Dollars</option>
+          <option value="Euros">Euros</option>
+          <option value="Hryvnia">Hryvnia</option>
+          <option value="Pesos">Pesos</option>
+        </select>
+        <br>
+        <label for="pres"><h5> Who is the president of Ukraine </h5></label>
+        <select id="pres">
+          <option value="Volodymyr Zelenskyy">Volodymyr Zelenskyy</option>
+          <option value="Vladimir Putin">Vladimir Putin</option>
+          <option value="Joe Biden">Joe Biden</option>
+          <option value="Olena Zelenska">Olena Zelenska</option>
+          <option value="Oleg Poropretsky">Oleg Poropretsky</option>
+        </select>
+        <input type="submit" value="Submit" id="submit">
+        <script>
+          document.querySelector('#submit').addEventListener('click', function(){
+          alert("Your quiz was submitted!");
+          });
+        </script>
+        </form>
+        </fieldset>
 </body>
